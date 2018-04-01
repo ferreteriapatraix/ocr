@@ -25,6 +25,7 @@ npm run build
 cd ..
 # Copy js artifacts
 cp -R js/dist release/js/dist
+cp -R js/init.js release/js/init.js
 
 # WORKER
 mkdir release/worker

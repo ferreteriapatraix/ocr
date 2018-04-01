@@ -2,18 +2,21 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
+    "lib": [
+      "dom",
+      "es2015"
+    ],
     "noImplicitAny": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "outDir": "dist",
     "removeComments": true,
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "src",
-    "typeRoots": [
-      "node_modules/@types"
+    "noUnusedParameters": true,
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      }
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

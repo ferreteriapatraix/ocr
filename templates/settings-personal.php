@@ -11,8 +11,10 @@ style('ocr', [
         'ocrpersonal'
 ]);
 script('ocr', [
-        'dist/ocrpersonal'
+        'dist/ocrpersonal',
+        'init'
 ]);
+
 ?>
 
 <div id="ocrPersonalSettings" class="section">

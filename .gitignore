@@ -55,7 +55,6 @@ nbproject
 
 # Worker Node.js Server
 /worker/dist
-/worker/spec/tsc-out
 
 # JS node_modules and dist
 npm-debug.log
@@ -68,3 +67,6 @@ npm-debug.log
 # release files
 /release
 ocr.tar.gz
+
+# vscode
+/.vscode

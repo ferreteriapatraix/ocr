@@ -54,7 +54,10 @@ class Application extends App {
         $eventDispatcher = \OC::$server->getEventDispatcher();
         $eventDispatcher->addListener('OCA\Files::loadAdditionalScripts', 
                 function () {
-                    script(OcrConstants::APP_NAME, 'dist/ocrapp');
+                    script(OcrConstants::APP_NAME, [
+                        'dist/ocrapp',
+                        'init'
+                    ]);
                     style(OcrConstants::APP_NAME, 'ocrstyle');
                     // if not loaded before - load select2 for multi select languages
                     vendor_script('select2/select2');

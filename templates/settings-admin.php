@@ -1,5 +1,8 @@
 <?php
-script('ocr', 'dist/ocradmin');
+script('ocr', [
+    'dist/ocradmin',
+    'init'
+]);
 ?>
 <div class="section" id="ocr">
 	<h2 class="icon-ocr" data-anchor-name="ocr"><?php p($l->t('OCR')) ?></h2>
